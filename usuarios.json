@@ -1,0 +1,9 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Admin",
+      "email": "admin@peluqueria.com",
+      "password": "1234"
+    }
+  ]
+}

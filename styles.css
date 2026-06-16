@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contenedor {
+  background-color: #111111;
+  padding: 44px 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  border: 0.5px solid #2a2a2a;
+  text-align: center;
+  color: white;
+}
+
+.turnos-contenedor {
+  max-width: 560px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #c9a84c;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+.subtitulo-logo {
+  font-size: 9px;
+  color: #555;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.divisor {
+  height: 0.5px;
+  background: linear-gradient(to right, transparent, #c9a84c, transparent);
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-size: 0.75rem;
+  color: #666;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border: 0.5px solid #2e2e2e;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #c9a84c;
+}
+
+input::placeholder {
+  color: #444;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  background-color: #c9a84c;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #b8943d;
+}
+
+
+p {
+  margin-top: 18px;
+  font-size: 0.82rem;
+  color: #555;
+}
+
+a {
+  color: #c9a84c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#mensaje, #mensaje-turno {
+  font-size: 0.82rem;
+  min-height: 18px;
+  margin-top: 14px;
+  font-weight: 500;
+}
+
+.error { color: #c0392b; }
+.exito { color: #c9a84c; }
+
+.turnos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.turnos-header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.turnos-header button {
+  width: auto;
+  padding: 7px 16px;
+  font-size: 0.7rem;
+  background: transparent;
+  color: #555;
+  border: 0.5px solid #2e2e2e;
+  letter-spacing: 1.5px;
+}
+
+.turnos-header button:hover {
+  background: #1a1a1a;
+  color: #c9a84c;
+  border-color: #c9a84c;
+}
+
+.form-turno {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+#lista-turnos {
+  list-style: none;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#lista-turnos li {
+  background-color: #1a1a1a;
+  border: 0.5px solid #2e2e2e;
+  border-left: 2px solid #c9a84c;
+  padding: 14px 16px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 0.88rem;
+  color: #ccc;
+}
+
+.sin-turnos {
+  color: #444 !important;
+  text-align: center !important;
+  border-left: none !important;
+  border: 0.5px solid #1e1e1e !important;
+}
+
+.turno-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.turno-item button {
+  width: auto;
+  padding: 5px 12px;
+  font-size: 0.65rem;
+  background: transparent;
+  color: #c0392b;
+  border: 0.5px solid #c0392b;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.turno-item button:hover {
+  background-color: #c0392b;
+  color: white;
+}
+
+
+.seccion-clientes {
+  margin-top: 36px;
+  border-top: 0.5px solid #1e1e1e;
+  padding-top: 28px;
+}
+
+.cliente-bloque {
+  background-color: #151515;
+  border: 0.5px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.cliente-bloque h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  color: #c9a84c;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.cliente-bloque ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cliente-bloque li {
+  background-color: #1a1a1a;
+  border-left: 2px solid #c9a84c;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+

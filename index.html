@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peluquería - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="contenedor">
+  <h1>Peluquería Turnos</h1>
+  <p class="subtitulo-logo">Barbería Premium</p>
+    <div class="divisor"></div>
+
+  <!-- FORMULARIO LOGIN -->
+  <div id="seccion-login">
+    <h2>Iniciar Sesión</h2>
+    <input type="email" id="login-email" placeholder="Email">
+    <input type="password" id="login-pass" placeholder="Contraseña">
+    <button onclick="iniciarSesion()">Entrar</button>
+    <p>¿No tenés cuenta? <a href="#" onclick="mostrarRegistro()">Registrate</a></p>
+  </div>
+
+  <!-- FORMULARIO REGISTRO (oculto al inicio) -->
+  <div id="seccion-registro" style="display:none">
+    <h2>Crear Cuenta</h2>
+    <input type="text" id="reg-nombre" placeholder="Nombre">
+    <input type="email" id="reg-email" placeholder="Email">
+    <input type="password" id="reg-pass" placeholder="Contraseña">
+    <button onclick="registrarUsuario()">Crear cuenta</button>
+    <p>¿Ya tenés cuenta? <a href="#" onclick="mostrarLogin()">Iniciá sesión</a></p>
+  </div>
+
+  <p id="mensaje"></p>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
