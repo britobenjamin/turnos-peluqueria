@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peluquería - Mis Turnos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="contenedor turnos-contenedor">
+
+    <div class="turnos-header">
+      <h1>✂️ Hola, <span id="nombre-usuario"></span></h1>
+      <button onclick="cerrarSesion()">Cerrar sesión</button>
+    </div>
+
+    <h2 id="titulo-formulario">Sacar un turno</h2>
+    <div class="form-turno">
+      <input type="date" id="turno-fecha">
+      <select id="turno-hora">
+        <option value="">Seleccionar hora</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+        <option value="19:00">19:00</option>
+        <option value="20:00">20:00</option>
+      </select>
+      <input type="tel" id="turno-telefono" placeholder="Teléfono de contacto">
+      <button id="boton-formulario" onclick="agregarTurno()">Confirmar turno</button>
+      <button id="boton-cancelar-edicion" onclick="cancelarEdicion()" style="display:none">Cancelar edición</button>
+    </div>
+
+    <p id="mensaje-turno"></p>
+
+    <h2>Mis turnos reservados</h2>
+    <ul id="lista-turnos">
+      <li class="sin-turnos">No tenés turnos reservados todavía.</li>
+    </ul>
+
+  </div>
+
+  <script src="cliente.js"></script>
+</body>
+
+</html>
